@@ -1,3 +1,37 @@
-.env
+# Virtual Environment
 .venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets
+.env
+*.env
+
+# Vector Database Storage & Local Caches
+chroma_db/
+.chroma/
+.cache/
+huggingface/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Large Model / Data Artifacts (if you generate raw output splits or dumped models)
+*.joblib
+*.pkl
+# Note: Keep trained models tracked IF required for repository cloning, 
+# otherwise un-comment *.joblib to exclude binary model weights from Git.
